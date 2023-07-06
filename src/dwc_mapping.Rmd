@@ -98,7 +98,6 @@ Create `occurrence`:
 occurrence <- input_data
 ```
 
- 
 ### language
 
 ```{r}
@@ -287,7 +286,6 @@ Save to CSV:
 ```{r}
 write_csv(occurrence, here("data", "processed", "occurrence.csv"), na = "")
 ```
-
 
 
 
