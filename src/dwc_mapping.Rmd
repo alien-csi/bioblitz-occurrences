@@ -125,7 +125,7 @@ occurrence %<>% mutate(dwc_accessRights = "https://www.inbo.be/en/norms-data-use
 ### datasetID
 
 ```{r}
-occurrence %<>% mutate(dwc_datasetID = "") 
+occurrence %<>% mutate(dwc_datasetID = "https://doi.org/10.15468/hv3p8a") 
 ```
 
 ### institutionCode
@@ -137,7 +137,7 @@ occurrence %<>% mutate(dwc_institutionCode = "INBO")
 ### basisofRecord
 
 ```{r}
-occurrence %<>% mutate(dwc_institutionCode = "HumanObservation") 
+occurrence %<>% mutate(dwc_basisOfRecord = "HumanObservation") 
 ```
 
 
