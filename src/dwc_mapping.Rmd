@@ -140,13 +140,13 @@ occurrence %<>% mutate(dwc_institutionCode = "")
 occurrence %<>% mutate(dwc_datasetName = "Alien species occurrences across Europe: Data collected during a pan-European Bioblitz") 
 ```
 
-## eventDate
+### eventDate
 
 ```{r}
 occurrence %<>% mutate(dwc_eventDate = obs_date) 
 ```
 
-## country
+### country
 
 ```{r}
 occurrence <-
@@ -155,7 +155,7 @@ occurrence <-
     TRUE ~ region))
 ```
 
-## countryCode
+### countryCode
 
 ```{r}
 occurrence <- 
@@ -176,7 +176,7 @@ occurrence <-
                                              
 ```
 
-## locality
+### locality
 
 ```{r}
 occurrence <-
@@ -199,7 +199,7 @@ occurrence <-
     TRUE ~ ""))
 ```
 
-## decimalLatitude, decimalLongitude, geodeticDatum
+### decimalLatitude, decimalLongitude, geodeticDatum
 
 ```{r}
 occurrence <- 
@@ -209,19 +209,19 @@ occurrence <-
     mutate(dwc_geodeticDatum = "WGS84")
 ```
 
-## occurrenceID
+### occurrenceID
 
 ```{r}
 occurrence %<>% mutate(dwc_occurrenceID = id) 
 ```
 
-## recordedBy
+### recordedBy
 
 ```{r}
 occurrence %<>% mutate(dwc_recordedBy = author) 
 ```
 
-## establishmentMeans
+### establishmentMeans
 
 ```{r}
 occurrence <- 
@@ -235,7 +235,7 @@ occurrence <-
     ))
 ```
 
-## degreeOfEstablishment
+### degreeOfEstablishment
 
 ```{r}
 occurrence <- 
@@ -249,13 +249,13 @@ occurrence <-
   ))
 ```
 
-## scientific name
+### scientific name
 
 ```{r}
 occurrence %<>% mutate(dwc_scientificName = sps)
 ```
 
-## vernacularName
+### vernacularName
 
 ```{r}
 occurrence %<>% mutate(dwc_vernacularName = sps_comm)
