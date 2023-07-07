@@ -134,6 +134,13 @@ occurrence %<>% mutate(dwc_datasetID = "")
 occurrence %<>% mutate(dwc_institutionCode = "INBO") 
 ```
 
+### basisofRecord
+
+```{r}
+occurrence %<>% mutate(dwc_institutionCode = "HumanObservation") 
+```
+
+
 ### datasetName
 
 ```{r}
