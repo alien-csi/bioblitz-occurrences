@@ -113,7 +113,7 @@ occurrence %<>% mutate(dwc_license = "http://creativecommons.org/publicdomain/ze
 ### rightsHolder
 
 ```{r}
-occurrence %<>% mutate(dwc_rightsHolder = "") 
+occurrence %<>% mutate(dwc_rightsHolder = "INBO") 
 ```
 
 ### accessRights
@@ -131,7 +131,7 @@ occurrence %<>% mutate(dwc_datasetID = "")
 ### institutionCode
 
 ```{r}
-occurrence %<>% mutate(dwc_institutionCode = "") 
+occurrence %<>% mutate(dwc_institutionCode = "INBO") 
 ```
 
 ### datasetName
@@ -218,7 +218,7 @@ occurrence %<>% mutate(dwc_occurrenceID = id)
 ### recordedBy
 
 ```{r}
-occurrence %<>% mutate(dwc_recordedBy = author) 
+occurrence %<>% mutate(dwc_recordedBy = "AlienCSI bioblitz") 
 ```
 
 ### establishmentMeans
@@ -259,6 +259,12 @@ occurrence %<>% mutate(dwc_scientificName = sps)
 
 ```{r}
 occurrence %<>% mutate(dwc_vernacularName = sps_comm)
+```
+
+### occurrenceRemarks
+
+```{r}
+occurrence %<>% mutate(dwc_occurrenceRemarks = paste("source:", origin)) 
 ```
 
 # Post-processing
